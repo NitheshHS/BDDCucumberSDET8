@@ -1,5 +1,6 @@
 Feature: Dataprovider feature
 
+
 Scenario Outline: Exceute the same scenario with multiple set of data
 When I want to fetch the deatils Employees "<empId>" and "<empName>" and <empsal>
 Examples:
@@ -9,7 +10,7 @@ Examples:
 		|Ty_03|Manoj|5000|
 
 
-@SmokeTest		
+@SmokeTest @RegressionTest	
 Scenario: I want to read the data from data table using java collection
 When I want to read data in row and column wise
 |id|name|number|

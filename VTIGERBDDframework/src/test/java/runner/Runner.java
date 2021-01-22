@@ -4,11 +4,13 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = {".\\src\\test\\java\\features"},
-glue = {"stepDefinition"},
+glue = {"stepDefinition","hook"},
 dryRun = false,
-tags = "@SmokeTest or @Functional"
+//tags = "@SmokeTest and @Functional",
+plugin = {"pretty", "html:target/cucumberreport.html",
+		"json:target/cucumber.json"},
+monochrome = true
 		)
 public class Runner extends AbstractTestNGCucumberTests{
-
-
+	
 }

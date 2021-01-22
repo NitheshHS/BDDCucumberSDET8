@@ -17,7 +17,7 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class LoginStepDefinition {
+public class LoginStepDefinition{
 	WebDriver driver;
 	String orgname;
 	@Given("I want to launch the browser")

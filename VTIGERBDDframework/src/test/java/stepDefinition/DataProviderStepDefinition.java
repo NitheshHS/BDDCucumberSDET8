@@ -7,8 +7,8 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.When;
 
 public class DataProviderStepDefinition {
-	@When("I want to fetch the deatils Employees {string} and {string} and {string}")
-	public void i_want_to_fetch_the_deatils_employees_and_and(String string, String string2, String string3) {
+	@When("I want to fetch the deatils Employees {string} and {string} and {int}")
+	public void i_want_to_fetch_the_deatils_employees_and_and(String string, String string2, int string3) {
 	    System.out.println(string+"|"+string2+"|"+string3);
 	}
 	@When("I want to read data in row and column wise")

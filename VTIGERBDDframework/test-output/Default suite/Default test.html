@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 21 17:43:08 IST 2021</td>
+<td>Started on:</td><td>Fri Jan 22 16:43:01 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (170 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37671 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,92 +68,32 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.Runner.setUpClass()'><b>setUpClass</b><br>Test class: runner.Runner</td>
-<td><div><pre>java.lang.IllegalArgumentException: Invalid tag expression at &apos;runner.Runner&apos;
-	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addTags(CucumberOptionsAnnotationParser.java:79)
-	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:40)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:73)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.cucumber.tagexpressions.TagExpressionException: Tag expression &apos;@SmokeTest, @Functional&apos; could not be parsed because of syntax error: expected operator
-	at io.cucumber.tagexpressions.TagExpressionParser.check(TagExpressionParser.java:136)
-	at io.cucumber.tagexpressions.TagExpressionParser.parse(TagExpressionParser.java:74)
-	at io.cucumber.tagexpressions.TagExpressionParser.parse(TagExpressionParser.java:27)
-	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addTags(CucumberOptionsAnnotationParser.java:77)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace11902257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11902257'><pre>java.lang.IllegalArgumentException: Invalid tag expression at &apos;runner.Runner&apos;
-	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addTags(CucumberOptionsAnnotationParser.java:79)
-	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:40)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:73)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.cucumber.tagexpressions.TagExpressionException: Tag expression &apos;@SmokeTest, @Functional&apos; could not be parsed because of syntax error: expected operator
-	at io.cucumber.tagexpressions.TagExpressionParser.check(TagExpressionParser.java:136)
-	at io.cucumber.tagexpressions.TagExpressionParser.parse(TagExpressionParser.java:74)
-	at io.cucumber.tagexpressions.TagExpressionParser.parse(TagExpressionParser.java:27)
-	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addTags(CucumberOptionsAnnotationParser.java:77)
-	... 29 more
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a valid user I wnat to create an oraganization", "Optional[Organization feature]"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at stepDefinition.OraganizationStepDef.i_validate_the_oraganization_created_or_not(OraganizationStepDef.java:47)
+	at ?.I validate the Oraganization created or not(file:///C:/Users/Nitheesha/git/BDDCucumberSDET8/VTIGERBDDframework/./src/test/java/features/Organization.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace595663369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace595663369'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at stepDefinition.OraganizationStepDef.i_validate_the_oraganization_created_or_not(OraganizationStepDef.java:47)
+	at ?.I validate the Oraganization created or not(file:///C:/Users/Nitheesha/git/BDDCucumberSDET8/VTIGERBDDframework/./src/test/java/features/Organization.feature:8)
 </pre></div></td>
-<td>0</td>
-<td>runner.Runner@7a765367</td></tr>
+<td>33</td>
+<td>runner.Runner@4d50efb8</td></tr>
 </table><p>
 </body>
 </html>

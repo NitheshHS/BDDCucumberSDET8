@@ -5,11 +5,12 @@ Feature: Login feature
     Given I want to launch the browser
     And I will navigate to login page by entering the url "http://localhost:8888"
 
-@SmokeTest @Functional
+@SmokeTest
   Scenario: I want to login to Vtiger Application as a valid user
     When I enter valid username "admin" and password "manager" and click on login button
     Then I validate Home page is displayed or not "Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM"
     And I signout from application
+
 @Functional
   Scenario Outline: I want to create multiple organization
     When I enter valid username "admin" and password "manager" and click on login button
