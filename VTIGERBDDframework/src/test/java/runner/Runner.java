@@ -3,7 +3,7 @@ package runner;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = {".\\src\\test\\java\\features"},
+@CucumberOptions(features = {".\\src\\test\\java\\features\\Organization.feature"},
 glue = {"stepDefinition","hook"},
 dryRun = false,
 //tags = "@SmokeTest and @Functional",

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37671" started-at="2021-01-22T16:43:01 IST" finished-at="2021-01-22T16:43:39 IST">
+  <suite name="Default suite" duration-ms="43694" started-at="2021-01-28T15:12:11 IST" finished-at="2021-01-28T15:12:55 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@4d50efb8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="37671" started-at="2021-01-22T16:43:01 IST" finished-at="2021-01-22T16:43:39 IST">
+    <test name="Default test" duration-ms="43694" started-at="2021-01-28T15:12:11 IST" finished-at="2021-01-28T15:12:55 IST">
       <class name="runner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@4d50efb8]" name="setUpClass" is-config="true" duration-ms="1086" started-at="2021-01-22T16:43:01 IST" finished-at="2021-01-22T16:43:02 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@4d50efb8]" name="setUpClass" is-config="true" duration-ms="730" started-at="2021-01-28T15:12:11 IST" finished-at="2021-01-28T15:12:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@4d50efb8]" name="runScenario" duration-ms="33927" started-at="2021-01-22T16:43:02 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-22T16:43:36 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@4d50efb8]" name="runScenario" duration-ms="39941" started-at="2021-01-28T15:12:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-28T15:12:52 IST">
           <params>
             <param index="0">
               <value>
@@ -27,25 +27,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at stepDefinition.OraganizationStepDef.i_validate_the_oraganization_created_or_not(OraganizationStepDef.java:47)
-at ✽.I validate the Oraganization created or not(file:///C:/Users/Nitheesha/git/BDDCucumberSDET8/VTIGERBDDframework/./src/test/java/features/Organization.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@4d50efb8]" name="tearDownClass" is-config="true" duration-ms="2577" started-at="2021-01-22T16:43:36 IST" finished-at="2021-01-22T16:43:39 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@4d50efb8]" name="tearDownClass" is-config="true" duration-ms="2963" started-at="2021-01-28T15:12:52 IST" finished-at="2021-01-28T15:12:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

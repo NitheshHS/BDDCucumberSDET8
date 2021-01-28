@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.google.common.io.Files;
 
 import io.cucumber.java.After;
@@ -28,6 +31,12 @@ public class Hook extends Base {
 	
 	@Before
 	public void setUp() throws Throwable {
+		ExtentHtmlReporter htmlreport=new ExtentHtmlReporter("./extentReport.html");
+		htmlreport.config().setDocumentTitle("Vtiger");
+		htmlreport.config().setReportName("Functional Test");
+		htmlreport.config().setTheme(Theme.DARK);
+		base.reports=new ExtentReports();
+		base.reports.attachReporter(htmlreport);
 		base.fUtil=new FileUtility();
 		if(base.fUtil.getPropertyKeyValue("browser").equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -55,6 +64,7 @@ public class Hook extends Base {
 			scenario.attach(event.getScreenshotAs(OutputType.BYTES), "image/png", scenario.getName());
 		}
 		base.driver.close();
+		base.reports.flush();
 	}
 	
 	
